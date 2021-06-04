@@ -1,0 +1,35 @@
+parserOptions:
+  ecmaVersion: 2020
+  project: tsconfig.json
+
+env:
+  browser: true
+
+extends:
+  - airbnb-typescript
+  - airbnb/hooks
+  - plugin:@typescript-eslint/recommended
+  - prettier/@typescript-eslint
+  - plugin:prettier/recommended
+
+rules:
+  prettier/prettier: error
+  react/jsx-uses-react: off
+  react/jsx-curly-newline: off
+  react/react-in-jsx-scope: off
+  react/require-default-props: off
+  '@typescript-eslint/ban-ts-ignore': off
+  comma-dangle: ['error', 'always-multiline']
+  no-console: ['error', { allow: ['warn', 'error'] }]
+  jsx-a11y/anchor-is-valid:
+    [
+      'error',
+      {
+        'components': ['Link'],
+        'specialLink': ['hrefLeft', 'hrefRight'],
+        'aspects': ['invalidHref', 'preferButton'],
+      },
+    ]
+
+plugins:
+  - prettier
