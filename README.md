@@ -17,4 +17,4 @@ A web based implementation of the board game Monopoly. As a result of miscommuni
 - Management of dependencies
 - Further experience with JavaScript
 - Postgres pg-promise
-- Usage of Express for the backend
+- Usage of Express and Node.js for the backend
